@@ -175,7 +175,7 @@ async function zobrazit() {
 
 ## Příklad
 
-* `json.zonc.eu/examples/zelenina.html`  
+`json.zonc.eu/examples/zelenina.html`  
 <img src=files/qrcode_json.zonc.eu.png width=30%></img> 
 
 ---

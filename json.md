@@ -15,6 +15,20 @@ revealOptions:
 }
 ```
 
+----
+
+## Přístup k materiálům
+
+### Prezentace
+`slides.zonc.eu/json.html`  
+<img src=files/qrcode_slides.zonc.eu.png width=30%></img> 
+
+----
+
+### Příklady
+`github.com/Czechball/json-prezentace`
+<img src=files/qrcode_json-priklady.png width=30%></img>
+
 ---
 
 ## Co je to JSON

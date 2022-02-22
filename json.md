@@ -151,22 +151,99 @@ revealOptions:
 
 ## Využití v JavaScriptu
 
+* Nativní
+* Jednoduchý parsing
+* `JSON.parse()`
+* `JSON.stringify()`
+
 ----
 
 ## Příklad
+
+* Fetchování JSON z url a načtení lokálně přes async request
+```js
+async function zobrazit() {
+      const requesturl = 'https://example.com/neco.json';
+      const request = new Request(requesturl);
+      const response = await fetch(request);
+      const data = await response.json();
+    }
+````
+
+----
+
+## Příklad
+
+* `json.zonc.eu/examples/zelenina.html`  
+<img src=files/qrcode_json.zonc.eu.png width=30%></img> 
 
 ---
 
 ## Využití v PHP
 
+* `json_decode`
+* Objekty, arraye
+
 ----
 
 ## Příklad
+
+*Získání dat*
+```php
+$stmt = $dbHandle->prepare($sql);
+```
+
+*Vytvoření arraye*
+```php
+$data = get_all($dbHandle, $db_table);
+```
+
+*Dump JSON objektu*
+```php
+echo json_encode($data, JSON_FORCE_OBJECT);
+```
+
+----
+
+## Ukázkový kód
+
+* [json-prezentace](https://github.com/Czechball/json-prezentace/blob/main/examples/fetch_data.php)
 
 ---
 
 ## Využití v PHP + JS
 
+* Možnosti využití AJAXu
+* Post requesty
+* API?
+
 ----
 
 ## Příklad
+
+```js
+var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST", "fetch_data.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState === 4 || this.status === 200){ 
+              let jsObject = JSON.parse(this.response);
+              console.log(jsObject);
+            }       
+        };
+        xmlhttp.send("db_table=" + qs["db_table"]);
+```
+
+---
+
+## Samostatná práce
+
+* Dokončení mého hrozného kódu
+* Možnost kombinace `zelenina.html` a PHP části
+* W3Schools, StackOverflow, Twitter...
+
+---
+
+# Děkuji za pozornost
+
+*Prezentace: reveal-md*

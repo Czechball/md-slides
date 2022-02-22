@@ -14,6 +14,7 @@ revealOptions:
     "bloat": null
 }
 ```
+*Součást [md-slides na GitHubu](https://github.com/Czechball/md-slides)*
 
 ----
 
